@@ -6,6 +6,8 @@
 <link rel="shortcut icon" href="biaoshi.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="mainpage3.js"></script>
+
    <style>
 
 body{
@@ -74,9 +76,9 @@ zoom:0.8;
          position: absolute;
          color: black;
          text-shadow: 0px 1px 4px red;
-         left: 790px;
-         top:240px;
-         font-size:10px;
+         left: 760px;
+         top:220px;
+         font-size:15px;
          font-family: fangsong;
          text-align: left;
          z-index:10;}
@@ -105,22 +107,96 @@ transition: 0s;
 opacity: 1;
 }
 
+
+.clicker {
+cursor:pointer;
+}
+
+.hiddendiv{
+display:none;
+content:"where is the exit?";
+height:200px;
+width:200px;
+left:650px;
+top:240px;
+background-color:blue;
+}
+
+.clicker:focus
++ .hiddendiv{
+display:block;
+}
+
+#hello{
+display:none;
+background-color:blue;
+position: absolute;
+height:200px;
+width:80px;
+left:1210px;
+top:200px;
+opacity:0.8;
+border:10px dotted white;
+border-radiusqqq: 200px 200px 120px 120px;
+
+color: white;
+text-shadow: 0px 1px 4px pink;
+font-size:17px;
+font-family: fangsong;
+text-align:center;
+z-index:10;
+box-shadowrrr: 15px 15px 15px 15px white;
+filterrrrr:blur(4px);
+cursor:pointer;
+}
+#hello1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid black;
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent ;
+  border-bottom: 15px solid transparent;
+  right: -50px;
+  opacity:0.7;
+  top: 70px;
+}
+
+#liujiaolou{
+  position:absolute;
+left:200px;
+top:50px;
+width:1200px;
+height:600px;
+opacity:1;
+border-radius: 0px 0px 0px 0px;
+z-index:15;
+display:none;
+filter:blur(4px);
+cursor:pointer;
+}
    </style>
  </head>
   <body>
-<a href="starman.html"><img id=mstarman src="mainpagestar.png"></a>
-   <div id=exit><a href="grasslandpage.html">EXIT</a></div>
 
- <div id=e>e </div>
-<a href="n17i.html"><img id=mn17i src="mainpagen17i.png"></a>
+<a href="mainpage2.html"> <div id=e>e </div></a>
+<img id=mn17i src="mainpagen17i.png">
 <div id=ni>N17I</div>
-<a href="mainpage.html"><img id=haibian src="haibiantwo.jpg"></a>
+<img id=haibian src="haibiantwo.jpg">
 
-<div class="container"><a href="grasslandpage.html"><img src="mainpagedoor.png" alt="Avatar" class="mdoor"></a>
+<div class="container"><a href="mainpage3.2.html"><img src="mainpagedoor.png" alt="Avatar" class="mdoor"></a>
   <div class="overlay">
-    <div class="door"><a href="grasslandpage.html"><img src="mainpagedoor2.png" class="doortwo"></a></div>
+    <div class="door"><a href="mainpage3.2.html"><img src="mainpagedoor2.png" class="doortwo"></a></div>
   </div>
 </div>
+
+<img id=mstarman onclick="myFunction()" src="mainpagestar.png">
+
+<div id=hello>
+I am a seastarman. Do you like me? <><<><><><><><><><>
+</div>
+<img id=liujiaolou src="liujiaolou.jpg">
 
   </body>
  </html>

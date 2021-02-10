@@ -6,12 +6,22 @@
 <link rel="shortcut icon" href="biaoshi.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+       <script src="mainpage2.js"></script>
    <style>
 
 body{
 zoom:0.8;
 }
 
+#haibiangif{
+position:absolute;
+left:0px;
+top:0px;
+width:1600px;
+opacity:1;
+border-radius: 0px 0px 0px 0px;
+z-index:-9;
+}
 
 
     #mn17i{position: absolute;
@@ -34,19 +44,6 @@ zoom:0.8;
          top:236px;
          z-index: 11;
      }
-     #exit{
-       position: absolute;
-       color: black;
-       text-shadow: 0px 1px 4px black;
-       width: 100px;
-       height: 200px;
-       left: 680px;
-       top:240px;
-       font-size:10px;
-       font-family: fangsong;
-       text-align: left;
-       z-index:10;
-     }
      #mstarman{
        position: absolute;
        height:200px;
@@ -55,21 +52,6 @@ zoom:0.8;
        opacity:1;
        border-radius: 0px 0px 0px 0px;
      }
-
-     #ni{
-       position: absolute;
-       color: white;
-       text-shadow: 0px 1px 4px white;
-       width: 700px;
-       height: 180px;
-       left: 270px;
-       top:290px;
-       font-size:17px;
-       font-family: fangsong;
-       text-align: left;
-       z-index:-11;}
-
-
        #e{
          position: absolute;
          color: black;
@@ -89,16 +71,11 @@ opacity:1;
 border-radius: 0px 0px 0px 0px;
 z-index:-10;
 }
-        #haibiangif{
-position:absolute;
-left:0px;
-top:0px;
-width:1600px;
-opacity:1;
-border-radius: 0px 0px 0px 0px;
-z-index:-9;
-}
 
+     .container {
+
+
+}
      .overlay {
 position: relative;
 opacity: 0;
@@ -110,21 +87,122 @@ transition: 0s;
 opacity: 1;
 }
 
+
+.clicker {
+cursor:pointer;
+}
+
+.hiddendiv{
+display:none;
+content:"where is the exit?";
+height:200px;
+width:200px;
+left:650px;
+top:240px;
+background-color:blue;
+}
+
+.clicker:focus
++ .hiddendiv{
+display:block;
+}
+
+#hello{
+display:none;
+background-color:blue;
+position: absolute;
+height:200px;
+width:80px;
+left:1210px;
+top:200px;
+opacity:0.8;
+border:10px dotted white;
+border-radius-----: 600px 600px 600px 600px;
+
+color: white;
+text-shadow: 0px 1px 4px pink;
+font-size:25px;
+font-family: fangsong;
+text-align:center;
+z-index:10;
+box-shadoweeeee: 15px 15px 15px 15px white;
+filter:blur(0px);
+}
+#hello1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid black;
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent ;
+  border-bottom: 15px solid transparent;
+  right: -50px;
+  opacity:0.7;
+  top: 70px;
+}
+
+#liujiaolou{
+  position:absolute;
+left:200px;
+top:50px;
+width:1200px;
+height:600px;
+opacity:1;
+border-radius: 0px 0px 0px 0px;
+z-index:15;
+display:none;
+filter:blur(4px);
+}
+
+.loop{left:800px;
+  top:100px;
+  width: 300px;
+   height: 300px;
+   display: block;
+   position: relative;
+   border: 0px solid black;
+   opacity:0px;
+   margin: 20px 0;
+}
+.sun{
+
+  width:40px;
+  height:40px;
+  position:absolute;
+
+}
+#sunsun{
+  width:40px;
+  height:40px;
+}
    </style>
  </head>
   <body>
-<a href="starman.html"><img id=mstarman src="mainpagestar.png"></a>
-   <div id=exit><a href="grasslandpage.html">EXIT</a></div>
 
- <div id=e>e </div>
-<a href="n17i.html"><img id=mn17i src="mainpagen17i.png"></a>
-<div id=ni>N17I</div>
-<a href="mainpage3.html"><img id=haibian src="haibianfour.jpg"></a>
-<a href="mainpage3.html"><img id=haibiangif src="haibian.gif"></a>
-<div class="container"><a href="grasslandpage.html"><img src="mainpagedoor.png" alt="Avatar" class="mdoor"></a>
-  <div class="overlay">
-    <div class="door"><a href="grasslandpage.html"><img src="mainpagedoor2.png" class="doortwo"></a></div>
+  <div id=e>e </div>
+
+  <img id=mn17i src="mainpagen17i.png">
+
+  <a href="mainpage.html"><img id=haibian src="haibianfour.jpg"></a>
+
+  <div class="container"><a href="grasslandpage.html"><img src="mainpagedoor.png" alt="Avatar" class="mdoor"></a>
+   <div class="overlay">
+     <div class="door"><a href="grasslandpage.html"><img src="mainpagedoor2.png" class="doortwo"></a></div>
+   </div>
   </div>
+
+  <img id=mstarman onclick="myFunction()" src="mainpagestar.png">
+
+  <div id=hello>
+  a seastarman is powerful.
+  </div>
+  <img id=liujiaolou src="liujiaolou.jpg">
+
+    <ahref="mainpage.html"><img id=haibiangif src="haibian.gif"></a>
+
+<div class="loop">
+  <div class="sun"><img id=sunsun src="sun.png"> </div>
 </div>
 
   </body>
