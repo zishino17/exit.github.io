@@ -6,53 +6,54 @@
 <link rel="shortcut icon" href="biaoshi.png">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-       <script src="atfirst.js"></script>
+       <!-- <script src="atfirst.js"></script> -->
    <style>
 
 body{
 zoom:0.8;
 }
-#br1{
-  font-size: 20px;
-  position: absolute;
-  color:black;
-  top:150px;
-  left:200px;
-}
-#br2{
-  font-size: 20px;
-  position: absolute;
-  color:black;
-  top:150px;
-  left:540px;
-}
-#start1{
-  font-size: 20px;
-  position: absolute;
-  color:black;
-  top:460px;
-  left:200px;
-}
-#start2{
-  font-size: 20px;
-  position: absolute;
-  color:black;
-  top:460px;
-  left:540px;
-}
-#question{font-size: 20px;
-position: absolute;
-color:black;
-top:50px;
-left:300px;}
-
-#answer{font-size: 20px;
+#link1{font-size: 20px;
 position: absolute;
 color:black;
 top:100px;
-left:200px;}
+left:200px;
+}
+#link2{
+  font-size: 20px;
+  position: absolute;
+  color:black;
+  top:100px;
+  left:300px;
+}
+#link3{
+  font-size: 20px;
+  position: absolute;
+  color:black;
+  top:100px;
+  left:440px;
+}
+#link4{
+  font-size: 20px;
+  position: absolute;
+  color:black;
+  top:100px;
+  left:740px;
+}
+#link5{
+  font-size: 20px;
+  position: absolute;
+  color:black;
+  top:100px;
+  left:900px;
+}
 
-#exit2{
+#name{font-size: 25px;
+position: absolute;
+color:purple;
+top:7px;
+left:300px;}
+
+#exit{
   top:150px;
   left:700px;
   font-size: 40px;
@@ -60,7 +61,8 @@ left:200px;}
   font-family: fantasy;
   position: absolute;
   color:black;
-  z-index:10;
+  display:none;
+z-index:10;
 
   }
 
@@ -71,6 +73,7 @@ font-stylea: italic;
 font-family:cursive;
 position: absolute;
 color:black;
+display:none;
 z-index:10;
 
 }
@@ -83,6 +86,7 @@ z-index:10;
   font-family:cursive;
   position: absolute;
   color:black;
+  display:none;
 z-index:10;
 
 }
@@ -94,33 +98,34 @@ z-index:10;
   font-family:cursive;
   position: absolute;
   color:black;
+  display:none;
   z-index:10;
 }
 
-/* #introduce{
-  left:800px;
+#introduce{
+  left:400px;
+  right:400px;
   top:300px;
   font-size: 17px;
   position: absolute;
   color:black;
   z-index:9;
-} */
+}
 
    </style>
  </head>
   <body>
-    <div id=question>complicated?</div>
+      《---<a href="atfirst1.html">EXIT </a> <br>
+      _________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-    <div id=answer>yes----------------------------------no</div>
-    <div id=br1>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br></div>
-    <div id=br2>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-<br></div>
-    <a id= start1 href="mainpage.html">start</a>
-    <a id=start2 href="meichen.html">start</a>
-  <!-- <a id=introduce href="meichen.html">Introduction</a> -->
-    <div id=exit2>EXIT</div>
-    <div id=made>A Website Made by</div>
-    <div id=myname>Meichen Liu (Zishi/Chufu-子式/初孚) </div>
-    <div id=link>More information about Meichen <a href="meichen.html">----></a>
+    <div id=name>Meichen Liu</div>
+
+    <a id= link1 href="works.html">works</a>
+    <a id= link2 href="research.html">research</a>
+    <a id= link3 href="math.html">elememtry mathematics</a>
+    <a id= link4 href="contact.html">contact</a>
+    <a id= link5 href="meichen.html">about</a>
+<div id=introduce>+86 15842664925<br>+1 4012158091<br>meichen2000@gmail.com<br>:)</div>
 
   </body>
  </html>
